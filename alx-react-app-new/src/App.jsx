@@ -2,6 +2,7 @@
 import "./App.css";
 import React, { useState, useEffect, createContext } from "react";
 import NewChild from "./components/NewChild";
+import Counter from "./components/Counter";
 
 function App({ children }) {
   const [count, setCount] = useState(0);
@@ -23,6 +24,7 @@ function App({ children }) {
       </button>
 
       <NewChild />
+      <Counter />
     </div>
   );
 }
